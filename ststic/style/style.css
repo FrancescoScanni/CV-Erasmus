@@ -1,0 +1,132 @@
+body{
+    
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 17vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+}
+.head{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    height: 17vh;
+    align-items: center;
+}
+.name{
+    margin-left: 3vh;
+}
+.mid{
+    font-size: 100%;
+}
+.contact{
+    display: flex;
+}
+p{
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+    margin-left: 20px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.main{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    background-color: #E8DCCC;
+    width: 50vw;
+    height: 80vh;
+}
+.b2{
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 80vh;
+}
+.b3{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+}
+
+.foto{
+    background-color: #f8ece4;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vh;
+}
+#me{
+    border-radius: 600px;
+    width: 12vw;
+    height: 25vh;
+    margin-bottom: 2ch;
+}
+hr{
+    border: solid 3px black;
+    width: 10vw;
+}
+.g1{
+    font-weight: bold;
+    font-size: 6rem;
+}
+.g2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 110%;
+}
+.buttons{
+    margin: 2vh 0;
+    padding-left: 0;
+    display: flex;
+}
+input{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 20px;
+}
+.desc{
+    padding: 0;
+    margin: 0;
+}
+#progetti{
+    background-color: #2525ff;
+    color: white;
+    margin-right: 1.5vh;
+}
+.social{
+    background-color: #E8DCCC;
+    display: flex;
+    justify-content: space-between;
+}
