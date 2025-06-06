@@ -15,6 +15,7 @@ body{
     margin-left: 2vh;
 }
 .desc{
+    text-align: center;
     margin-top: 4vh;
 }
 .proj{
@@ -125,3 +126,21 @@ ul{
     height: 30px;
     margin-left: 2vh;
 }
+.n{
+    width: 90%;
+    height: 60%;
+    margin-top: 13vh;  
+}
+
+
+.e{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.e:hover{
+    color: #2525ff;
+    transform: scale(1.1);
+}
+

@@ -35,6 +35,7 @@ p{
     align-items: center;
     font-size: 120%;
     margin-left: 20px;
+    text-decoration: none;
 }
 .container{
     width: 100vw;
@@ -88,6 +89,7 @@ p{
     flex-direction: column;
     justify-content: center;
     padding-left: 2vh;
+    padding-right: 2vh;
 }
 #me{
     border-radius: 600px;
@@ -109,6 +111,7 @@ hr{
     font-size: 110%;
 }
 .buttons{
+    text-decoration: none;
     margin: 2vh 0;
     padding-left: 0;
     display: flex;
@@ -150,7 +153,8 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    padding-bottom: 10vh;
+
 }
 .tt{
     margin-top: 5vh;
@@ -162,15 +166,42 @@ input{
     gap: 5vh;
 }
 .sk{
-    width: 45vw;
+    width: 42.5vw;
     height: 50vh;
     background-color: #E8DCCC;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2vh;
+    padding: 4vh;
+}
+ul{
+    padding-top: 3vh;
 }
 .g{
     background-color: #f8ece4;
+}
+.sk:hover{
+    transform: scale(1.1);
+    border: solid #ffffff;
+}
+hr{
+    border: 5px black;
+    width: 50%;
+}
+.footer{
+    
+}
+li{
+    font-size: 110%;
+}
+.e{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.e:hover{
+    color: #2525ff;
+    transform: scale(1.1);
 }
