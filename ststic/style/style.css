@@ -1,5 +1,5 @@
 body{
-    
+  overflow-x: hidden;  
 
 }
 .header{
@@ -68,8 +68,8 @@ p{
     width: 40vw;
     height: 60vh;
     display: flex;
+    border-radius: 30px;
 }
-
 .foto{
     background-color: #f8ece4;
     width: 50%;
@@ -78,7 +78,8 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .info{
     width: 50%;
@@ -93,6 +94,7 @@ p{
     width: 12vw;
     height: 25vh;
     margin-bottom: 2ch;
+    margin-top: 3vh;
 }
 hr{
     border: solid 3px black;
@@ -126,7 +128,49 @@ input{
     margin-right: 1.5vh;
 }
 .social{
-    background-color: #E8DCCC;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding: 3vh 0;
+}
+.s{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    
+}
+
+
+
+.skills{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+.tt{
+    margin-top: 5vh;
+}
+.skillCont{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh;
+}
+.sk{
+    width: 45vw;
+    height: 50vh;
+    background-color: #E8DCCC;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+}
+.g{
+    background-color: #f8ece4;
 }
