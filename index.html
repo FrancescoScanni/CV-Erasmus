@@ -9,19 +9,21 @@
     <title>Francesco's CV</title>
 </head>
 <body class="w-screen overflow-x-hidden">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <div class="container">
 
         <!--HEADER-->
-        <div class="row header w-screen h-[5] pl-[5] bg-[#f2f2f2] pl-10 pr-10">
-            <div class="col head text-xl flex justify-between">
-                <div class="profile  ml-5 flex justify-center h-[15vh] sm:h-[25vh] items-center">
+        <div class="row header w-screen h-[15vh] bg-[#f2f2f2] px-6 relative">
+            <div class="col head h-[15vh] text-xl flex justify-between">
+                <div class="profile  ml-5 flex justify-center h-[15vh] sm:h-[15vh] items-center">
                     <a href=""><img class="w-[25px] sm:w-[50px]"   src="ststic\style\media\icon.png" alt="icon"></a>
                     <h2 class="name text-1rem ml-3 text-[15px] sm:text-[40px]"><b>Francesco Scanni</b><br><span class="mid"> / CV 2025 </span></h2>
                 </div>
                 <div class="contact flex text-[10px] sm:text-[20px] no-underline mr-5">
                     <a class="e flex justify-center pr-5 no-underline" href="#skills"><p class="flex items-center color-[#000000]">About me</p></a>
-                    <a class="e flex justify-center  pr-5 no-underline"href="progettii.html"><p class="flex items-center color-[#000000]">Projects</p></a>
-                    <a class="e flex justify-center no-underline" href="contatti.html"><p class="flex items-center color-[#000000]">Contact me</p></a>
+                    <a class="e flex justify-center  pr-5 no-underline"href="#proj"><p class="flex items-center color-[#000000]">Projects</p></a>
+                    <a class="e flex justify-center no-underline" href="#contacts"><p class="flex items-center color-[#000000]">Contact me</p></a>
                 </div>
             </div>
         </div>
@@ -29,7 +31,6 @@
 
 
 
-        
         <!--MAIN-->
         <div class="row w-screen flex justify-center items-center">
             <div class="col-md-6 b1 p-0 h-[30vh] bg-[#000000] sm:h-[100vh] bg-[#FAEBD7]">
@@ -70,14 +71,13 @@
 
 
         <!--CONTACTS-->
-        <div class="row mt-[7vh] font-bold w-[100vw]">
+        <div id="contacts" class="row mt-[7vh] font-bold w-[100vw]">
             <div class="col">
                 <div id="title">
                     <h1 class="sm:text-[40px] text-[25px] flex justify-center">Contacts</h1>
                 </div>
             </div>
         </div>
-
 
         <div class="row w-[100vw] flex justify-center">
             <div class="col-9">
@@ -89,16 +89,16 @@
 
             <div class="col-10 p-0 sm:w-[60vw] h-[50vh]">
                 <div class="bg-[#f7fbfb] mt-[10vh] sm:h-[60vh] h-[65vh] rounded-[30px] flex border border-black border-[3px]">
-                    <div class="div1 sm:w-[60%] w-[100%] h-full py-[5vh] px-[2vh] bg-[#E8DCCC] rounded-[30px] sm:roundedl-[30px]">
+                    <div class="div1 sm:w-[60%] w-[100%] h-full py-[5vh] px-[2vh] bg-[#E8DCCC] sm:rounded-l-[30px] rounded-[30px]">
                         <div class="quad">
                             <h2 class="tit font-bold sm:text-[35px] text-[25px] pl-5">Contact me on...</h2>
                         </div>
                         
-                        <ul class="pl-[5vh]">
+                        <ul class="pl-[5vh] pt-[3vh]">
                             <li>
                                 <div class="cont">
-                                    <h3 class="pt-[6vh] sm:text-[1.5rem] text-[15px]"><span class="font-bold ">Telephone: </span> <a href="tel:+393770861993">+39 377 086 1993</a></h3>
-                                    <img class="im"src="ststic\style\media\cell.png" alt="">
+                                    <h3 class="sm:text-[1.5rem] text-[15px]"><span class="font-bold ">Telephone: </span> <a href="tel:+393770861993">+39 377 086 1993</a></h3>
+                                    <img class="im" src="ststic\style\media\cell.png" alt="">
                                 </div>
                             </li>
                             <li>
@@ -138,8 +138,8 @@
                         </ul>
 
                     </div>
-                    <div class="div2 zz w-[40%] h-full flex justify-center hidden sm:block items-center ">
-                        <img  class="imgg z w-[120%] h-[100%] rounded-[30px] p-[6vh] hidden sm:block" src="ststic\style\media\contatti-icona-removebg-preview.png" alt="">
+                    <div class="div2 zz w-[40%] h-full  hidden sm:flex flex justify-center items-center ">
+                        <img  class="imgg  sm:w-[30vw] sm:h-[auto] rounded-[30px] p-[6vh] hidden sm:block" src="ststic\style\media\contatti-icona-removebg-preview.png" alt="">
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
 
 
         <!--PROJECTS-->
-        <div class="row mt-[30vh] font-bold w-[100vw]">
+        <div id="proj"  class="row mt-[35vh] font-bold w-[100vw]">
             <div id="title">
                 <h1 class="t sm:text-[40px] text-[25px] flex justify-center">Projects and certificates</h1>
             </div>
@@ -163,69 +163,64 @@
         </div>
 
 
-        <div class="flex w-screen flex-col sm:flex-row justify-center items-center sm:gap-10 px-[40vh] py-4 bg-white rounded-xl pt-10">
-            <div class="flex-1">
-                <div class="flex items-center mb-2">
-                <img src="ststic/style/media/square.png" class="w-6 h-6 mr-2" alt="">
+        <div class="row w-screen sm:mt-[9vh] mt-[5vh]">
+            <div class="col-5 offset-2 bg-[#F3F4F6] sm:py-5 py-[3vh] pl-[3vh] rounded-l-[30px]">
                 <h2 class="text-lg sm:text-2xl font-bold">B1 Cambridge Certifications</h2>
-                </div>
                 <h3 class="text-sm sm:text-base mb-2 italic">March 2024</h3>
-                <p class="text-sm sm:text-base">
+                <p class="text-[8px] sm:text-base">
                 Successfully obtained the Cambridge English B1 Preliminary (PET) certification in March 2024. This internationally recognized qualification confirms solid intermediate-level English skills, including reading, writing, listening, and speaking, and demonstrates the ability to communicate effectively in everyday situations.
                 </p>
             </div>
-
-            <div class="hidden sm:block">
-                <img src="ststic/style/media/camb.png" class="w-40 sm:w-60" alt="">
+            <div class="col-3 flex justify-center items-center bg-[#F3F4F6] py-5 pr-5 rounded-r-[30px]">
+                <div class="flex justify-center items-center">
+                    <img src="ststic/style/media/camb.png" class="w-[auto] sm:w-[50%]" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="flex w-screen flex-col sm:flex-row justify-center items-center sm:gap-10 px-[40vh] py-4 bg-white rounded-xl">
-            <div class="flex-1">
-                <div class="flex items-center mb-2">
-                <img src="ststic/style/media/square.png" class="w-6 h-6 mr-2" alt="">
+
+        <div class="row w-screen mt-[9vh]">
+            <div class="col-5 offset-2 bg-[#F3F4F6] sm:py-5 py-[3vh] pl-[3vh] rounded-l-[30px]">
                 <h2 class="text-lg sm:text-2xl font-bold">IBM - Education & Skills</h2>
-                </div>
-                <h3 class="text-sm sm:text-base mb-2 italic">March 2024</h3>
-                <p class="text-sm sm:text-base">
+                <h3 class="text-sm sm:text-base mb-2 italic">November 2023</h3>
+                <p class="text-[8px] sm:text-base">
                 Completed the IBM Education & Skills certification in November 2024. This credential, issued by IBM, demonstrates
                     foundational knowledge and practical skills in digital technologies and innovative tools, with a focus on continuous
                     learning and professional development in the tech industry.
                 </p>
             </div>
-
-            <div class="hidden sm:block">
-                <img src="ststic\style\media\ibm.png" class="w-40 sm:w-60" alt="">
+            <div class="col-3 flex justify-center items-center bg-[#F3F4F6] py-5 pr-5 rounded-r-[30px]">
+                <div class="flex justify-center items-center">
+                    <img src="ststic/style/media/ibm.png" class="w-[auto] sm:w-[60%]" alt="">
+                </div>
             </div>
         </div>
 
 
-        <div class="flex w-screen flex-col sm:flex-row justify-center items-center sm:gap-10 px-[40vh] py-4 bg-white rounded-x">
-            <div class="flex-1">
-                <div class="flex items-center mb-2">
-                <img src="ststic/style/media/square.png" class="w-6 h-6 mr-2" alt="">
+
+        <div class="row w-screen mt-[9vh]">
+            <div class="col-5 offset-2 bg-[#F3F4F6] sm:py-5 py-[3vh] pl-[3vh] rounded-l-[30px]">
                 <h2 class="text-lg sm:text-2xl font-bold">IRC - First Aid Certification</h2>
-                </div>
-                <h3 class="text-sm sm:text-base mb-2 italic">March 2024</h3>
-                <p class="text-sm sm:text-base">
+                <h3 class="text-sm sm:text-base mb-2 italic">April 2024</h3>
+                <p class="text-[8px] sm:text-base">
                 Completed the IRC First Aid certification in April 2024 at the ASL of Noicattaro. The course provided practical training and theoretical knowledge in basic life support (BLS), emergency response, and first aid procedures, in accordance with national health and safety standards.
                 </p>
             </div>
-
-            <div class="hidden sm:block">
-                <img src="ststic\style\media\fa.jpg" class="w-20 sm:w-40" alt="">
+            <div class="col-3 flex justify-center items-center bg-[#F3F4F6] py-5 pr-5 rounded-r-[30px]">
+                <div class="flex justify-center items-center">
+                    <img src="ststic/style/media/fa.jpg" class="w-[80%] sm:w-[30%]" alt="">
+                </div>
             </div>
         </div>
-
+        
 
 
         <!--SKILLS-->
-
-        <div class="a row w-[100vw] flex justify-center pb-5">
+        <div id="skills" class="a row w-[100vw] flex justify-center pb-10 mt-[5vh]">
             
             <h1 class="flex justify-center mt-[5vh] text-[20px] sm:text-[50px] p-0"><b>My personal skills</b></h1>
 
-            <div class="b col-4 offset-1 mt-10 sm:p-8 bg-[#FAEBD7] ml-0 rounded-5">
+            <div class="b col-4 offset-1 sm:mt-10 mt-4 sm:p-8 bg-[#FAEBD7] ml-0 rounded-5">
                 <h3 class="text-[15px] sm:text-[30px] p-3"><b>Digital Skills</b></h3>
                     <hr>
                     <ul>
@@ -234,40 +229,49 @@
                     </ul>
             </div>
 
-            <div class="b col-4 offset-1 mt-10  sm:p-8 bg-[#FAEBD7] rounded-5">
+            <div class="b col-4 offset-1 sm:mt-10 mt-4 sm:p-8 bg-[#FAEBD7] rounded-5">
                 <h3 class="text-[15px] sm:text-[30px] p-3"><b>Communication Skills</b></h3>
                     <hr>
                     <ul>
-                        <li class="text-[10px] sm:text-[20px] p-3">I have developed strong technical skills through both self-learning and academic experience, including photo and video editing, coding, algorithm design, and front-end web development. I also have a solid foundation in IT, Artificial Intelligence, and Web Development.</li>	
+                        <li class="text-[10px] sm:text-[20px] p-3">I have developed strong technical skills through both self-learning and academic experience, including photo and video editing, coding, algorithm design, and front-end web development. I'm also into IT, AI and Web Development.</li>	
                     </ul>
             </div>
 
 
-            <div class="b col-4 offset-1 mt-12 sm:p-8 bg-[#FAEBD7] ml-0 rounded-5">
+            <div class="b col-4 offset-1 sm:mt-10 sm:p-8 bg-[#FAEBD7] ml-0 rounded-5">
                 <h3 class="text-[15px] sm:text-[30px] p-3"><b>Job-Related Skills</b></h3>
                     <hr>
                     <ul>
-                        <li class="text-[10px] sm:text-[20px] p-4">I am a collaborative and responsible individual who approaches challenges with confidence and strategic thinking. I’m highly motivated to learn, grow, and consistently deliver high-quality results, facing common life, social tasks.</li>
+                        <li class="text-[10px] sm:text-[20px] p-4">I am a collaborative and responsible individual who approaches challenges with confidence and strategic thinking. I’m highly motivated to learn, grow, and consistently deliver high-quality results, facing common life, specific and social tasks.</li>
                     </ul>
             </div>
 
-            <div class="b col-4 offset-1 mt-12 sm:p-8 bg-[#FAEBD7] rounded-5">
+            <div class="b col-4 offset-1 sm:mt-10 sm:p-8 bg-[#FAEBD7] rounded-5">
                 <h3 class="text-[15px] sm:text-[30px] p-3"><b>Other Skills</b></h3>
                     <hr>
                     <ul>
-                        <li class="text-[10px] sm:text-[20px] p-3">I stay active through regular workouts and express creativity by playing drums. I'm confident in communicating with people of all ages and backgrounds, building connections easily. My strong language skills and cross-cultural experiences enhance my adaptability and communication in diverse environments.
+                        <li class="text-[10px] sm:text-[20px] p-3">I stay active through regular workouts and express creativity by playing drums. I'm confident in communicating with people of all ages and backgrounds, building connections easily. Generally, I always try to stay informed into the political and social field.
                         </li>
                     </ul>
             </div>
         </div>
+
+
+
+
+        <!--FOOTER-->
+        <div class="w-[100vw] bg-gray-800 text-white text-sm text-center p-4 mt-10 rounded-t-xl shadow-inner">
+            <p>&copy; 2025 Francesco Scanni. Public CV.</p>
+            <div class="mt-2 flex justify-center space-x-4 text-blue-400">
+                <a href="https://github.com/francescoscanni" target="_blank" class="hover:underline">GitHub</a>
+                <a href="mailto:frascanni07@gmail.com" class="hover:underline">Email</a>
+                <a href="https://www.linkedin.com/Francesco Scanni" target="_blank" class="hover:underline">LinkedIn</a>
+            </div>
+        </div>
+
+        </div>
     </div>
 
-
-
-    
-
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="ststic\script\script.js"></script>
 </body>
 </html>
