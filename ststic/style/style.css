@@ -58,4 +58,8 @@
     display: flex;
     justify-content: flex-start;
   }
+  .bb{
+    display: flex;
+    flex-direction: column;
+  }
 }
