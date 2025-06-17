@@ -25,7 +25,7 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .im{
     width: 50px;
     height: 50px;
@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .a{
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
   }
   .b{
     margin-left: 0 !important;
-    width: 75vw !important;
+    width: 100%;
     margin: 5vh 0;
   }
   span{
@@ -53,10 +53,6 @@
   }
   .v{
     padding: 0;
-  }
-  .b{
-    display: flex;
-    justify-content: flex-start;
   }
   .bb{
     display: flex;
